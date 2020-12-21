@@ -29,6 +29,12 @@ document.getElementById('createPost').addEventListener('click', event => {
     })
     .catch(err => {
       console.error(err)
+      savePost({
+        title: document.getElementById('title').value,
+        body: document.getElementById('body').value
+      })
+      document.getElementById('title').value = ''
+      document.getElementById('body').value = ''
     })
 })
 
