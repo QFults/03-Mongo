@@ -11,7 +11,37 @@
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron">
+        <h1 class="display-4">Blog App</h1>
+        <p class="lead">This is a simple blog app with passport authentcation and a mongoose ODM</p>
+        <hr class="my-4">
+        <p id="username"></p>
+        <button id="signOut" class="btn btn-primary">Sign Out</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Create A Post</h1>
+        <form>
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title">
+          </div>
+          <div class="form-group">
+            <label for="body">Body</label>
+            <input type="text" class="form-control" id="body">
+          </div>
+          <button id="createPost" class="btn btn-primary">Create Post</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h1>Posts</h1>
+        <ul id="posts" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
